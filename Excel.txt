@@ -1,0 +1,6 @@
+| TC ID | Scenario                         | Steps                                                        | Test Data                                          | Expected Result                             |
+| ----- | -------------------------------- | ------------------------------------------------------------ | -------------------------------------------------- | ------------------------------------------- |
+| TC‑01 | User Registration                | Navigate to registration page → enter valid details → submit | Unique email, password, first & last name, country | Account created; greeting “Welcome, {name}” |
+| TC‑02 | Registration with missing fields | Submit with required field(s) empty                          | leave one required empty                           | Appropriate validation messages displayed   |
+| TC‑03 | Login with valid account         | Navigate to login page → enter credentials → submit          | same email/password as TC‑01                       | Successful login; user dashboard visible    |
+| TC‑04 | Login with invalid credentials   | submit wrong password/email                                  | incorrect email or password                        | Error message indicating invalid login      |
