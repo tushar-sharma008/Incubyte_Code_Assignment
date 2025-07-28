@@ -1,0 +1,11 @@
+Feature: Magento User Registration and Login
+
+  Scenario: Register a new user
+    Given I open the Magento registration page
+    When I enter valid registration details
+    Then I should see registration success message
+
+  Scenario: Log in with registered user
+    Given I open the Magento login page
+    When I log in with correct credentials
+    Then I should be successfully logged in
